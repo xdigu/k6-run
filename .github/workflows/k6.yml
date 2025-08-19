@@ -1,4 +1,4 @@
-name: action with matrix
+name: run k6
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  cypress-validation:
+  k6-validation:
     runs-on: ubuntu-latest
     steps:
       - name: Cypress run
