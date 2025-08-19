@@ -12,7 +12,7 @@ jobs:
   k6-validation:
     runs-on: ubuntu-latest
     steps:
-      - name: Cypress run
+      - name: k6 run
         uses: xdigu/k6-workflow@main
         with:
           base_url: ${{ vars.BASE_URL }}
