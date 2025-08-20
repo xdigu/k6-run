@@ -16,3 +16,4 @@ jobs:
         uses: xdigu/k6-workflow@main
         with:
           base_url: ${{ vars.BASE_URL }}
+          should_run_default: true
