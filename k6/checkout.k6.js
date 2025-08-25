@@ -9,13 +9,13 @@ const request = new Request()
 export const options = {
   stages: [
     // Ramp-up from 1 to 30 VUs in 30s
-    { duration: "30s", target: 30 },
+    { duration: "1s", target: 30 },
 
     // Stay on 30 VUs for 60s
-    { duration: "60s", target: 30 },
+    { duration: "5s", target: 30 },
 
     // Ramp-down from 30 to 0 VUs in 10s
-    { duration: "30s", target: 0 },
+    { duration: "1s", target: 0 },
   ],
 }
 
