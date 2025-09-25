@@ -1,4 +1,5 @@
 import { group } from "k6"
+import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js"
 
 import URLS from "./utils/urls.js"
 import { Request } from "./utils/request.js"
@@ -27,6 +28,6 @@ export default function () {
 
 export function handleSummary(data) {
   return {
-    [Report.fileName]: JSON.stringify(data),
+    [Report.fileName]: htmlReport(data),
   }
 }
