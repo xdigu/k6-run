@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: k6-run
+  annotations:
+    github.com/project-slug: xdigu/k6-run
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
